@@ -22,6 +22,9 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container text-center">
+			<a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+				<img src="assets/images/8201371_menu_list_order_ui_checklist_icon.png" alt="Logo" width="37" height="37">
+			</a>
 			<!-- logo -->
 			<a class="navbar-brand" href="#">CHUCS</a>
 		
@@ -46,67 +49,60 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container_time">
-		<div class="row">
-			<div class="col-sm-5 fade-in-out">
-				<div class="VivaTimeline">
-					<dl>
-					<!--月份 1-->
-					<dt>2023</dt>
-					
-					<!-- string -->
-					<dd class="pos-right clearfix">
-						<div class="circ"></div>
-						<div class="time">07-25</div><!--填入日期-->
-						<div class="events">
-							<div class="events-header">
-								<a href="codeforces224D.html">codeforces224D</a>
-							</div><!--填入標題-->
-						</div>
-					</dd>
-					
-					<!-- dsu -->
-					<dd class="pos-right clearfix">
-						<div class="circ"></div>
-						<div class="time">07-23</div><!--填入日期-->
-						<div class="events">
-							<div class="events-header">
-								<a href="POJ_1182.html">POJ_1182</a>
-							</div><!--填入標題-->
-						</div>
-					</dd>
-					
-					<!-- dp -->
-					<dd class="pos-right clearfix">
-						<div class="circ"></div>
-						<div class="time">07-22</div><!--填入日期-->
-						<div class="events">
-							<div class="events-header">
-								<a href="uva104.html">uva104</a>
-							</div><!--填入標題-->
-						</div>
-					</dd>
-
-					<!-- dp -->
-					<dd class="pos-right clearfix">
-						<div class="circ"></div>
-						<div class="time">07-21</div><!--填入日期-->
-						<div class="events">
-							<div class="events-header">
-								<a href="codeforces486D.html">codeforces486D</a>
-							</div><!--填入標題-->
-						</div>
-					</dd>
-					</dl>
-				</div>
-			</div>
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+	  <div class="offcanvas-header">
+		<h5 class="offcanvas-title" id="offcanvasExampleLabel">章節</h5>
+		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	  </div>
+	  <div class="offcanvas-body">
+		  <ul class="navbar-nav">
+			<li><a class="dropdown-item" href="教學-編譯器.html">第0次課程-編譯器</a></li>
+		  </ul>
+	  </div>
+	</div>
+	<div class="container">
+		<div class="title_dis">
+			<h1>社團用編譯器Dev-C++</h1>
+			<hr>
+			<img src="assets/images/dev.png" width="1200">
+		</div>
+		
+		<div class="dis">
+			<p><h1>下載教學</h1></p>
+			<hr>
+			<h6>Dev-C++ 5.11 下載: <a href="https://sourceforge.net/projects/orwelldevcpp/files/latest/download">點擊後等待五秒</a></h6>
+			<p><img src="assets/images/devE.png" width="500"></p>
+			<p><img src="assets/images/devC.png" width="500"></p>
+		</div>
+		
+		<div class="dis">
+			<h1>Dev-C++ 安裝c++17</h1>
+			<hr>
+			<h6>mingw-18.0 下載: <a href="https://nuwen.net/files/mingw/mingw-18.0.exe">點我下載</a></h6>
+			<h6>選擇一個你找得到的地址</h6>
+			<p><img src="assets/images/mingw.png" width="500"></p>
+			<h6>打開Dev-C++ 選擇編譯器選項(C)</h6>
+			<p><img src="assets/images/編譯器選項.png" width="1200"></p>
+			<h6>選擇你剛剛下載的資料夾</h6>
+			<p><img src="assets/images/mingw資料夾.png" width="500"></p>
+			<p><img src="assets/images/載入mingw.png" width="500"></p>
+		</div>
+		
+		<div class="dis">
+			<h1>預設程式碼</h1>
+			<hr>
+			<h6>打開Dev-C++ 選擇編譯器選項(E)</h6>
+			<p><img src="assets/images/編譯器選項E.png" width="1200"></p>
+			<h6>選擇插入程式碼 選擇預設程式碼</h6>
+			<h6>這裡要打勾(開啟新的空白檔案時插入以下文字:)</h6>
+			<p><img src="assets/images/預設程式碼.png" width="500"></p>
 		</div>
 	</div>
 	
 	<footer class="bg-light py-4 mt-auto">
 		<div class="container px-5">
 			<div class="row align-items-center justify-content-between flex-column flex-sm-row">
-				<div class="col-auto"><div class="small m-0 text-dark">CHUCS &copy; 2023/07/25更新</div></div>
+				<div class="col-auto"><div class="small m-0 text-dark">CHUCS &copy; 2023/09/10更新</div></div>
 				<div class="col-auto"><div class="small m-0 text-dark">- by hao</div></div>
 			</div>
 		</div>
@@ -115,21 +111,3 @@
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
 </html>
-<!-- 淡入淡出效果 
-<div class="fade-in-out">這是淡入淡出效果的範例</div>
--->
-<!-- 平移效果 
-<div class="slide-in">這是平移效果的範例</div>
--->
-<!-- 縮放效果 
-<div class="scale-in">這是縮放效果的範例</div>
--->
-<!-- 旋轉效果 
-<div class="rotate">這是旋轉效果的範例</div>
--->
-<!-- 彈跳效果 
-<div class="bounce">這是彈跳效果的範例</div>
--->
-<!-- 滑動效果 
-<div class="slide-down">這是滑動效果的範例</div>
--->
